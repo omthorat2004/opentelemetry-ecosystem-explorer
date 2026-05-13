@@ -119,11 +119,10 @@ export function LegacyApp() {
               {isEnabled("COLLECTOR_PAGE") && (
                 <>
                   <Route path="/collector/components" element={<CollectorPage />} />
-                  <Route path="/collector/components/:version" element={<CollectorPage />} />
-                  <Route
-                    path="/collector/components/:version/:id"
-                    element={<CollectorDetailPage />}
-                  />
+                    <Route
+                      path="/collector/components/:distribution/:name"
+                      element={<CollectorDetailPage />}
+                    />
                 </>
               )}
               <Route path="/about" element={<AboutPage />} />
