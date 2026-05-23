@@ -113,12 +113,9 @@ export function V1App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/java-agent" element={<JavaAgentPage />} />
               <Route path="/java-agent/instrumentation" element={<JavaInstrumentationListPage />} />
+
               <Route
-                path="/java-agent/instrumentation/:version"
-                element={<JavaInstrumentationListPage />}
-              />
-              <Route
-                path="/java-agent/instrumentation/:version/:name"
+                path="/java-agent/instrumentation/:name"
                 element={<InstrumentationDetailPage />}
               />
               <Route path="/java-agent/configuration" element={<JavaConfigurationListPage />} />
