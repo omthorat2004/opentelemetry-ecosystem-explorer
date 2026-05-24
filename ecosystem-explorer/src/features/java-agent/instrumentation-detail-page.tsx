@@ -185,7 +185,7 @@ export function InstrumentationDetailPage() {
                   Version <code className="rounded bg-yellow-500/10 px-1 py-0.5">{version}</code>{" "}
                   does not exist.
                 </p>
-                {latestVersion && param&& (
+                {latestVersion && param && (
                   <Link
                     to={`/java-agent/instrumentation/${latestVersion}/${param}`}
                     className="inline-flex items-center gap-1.5 text-sm text-yellow-600 underline hover:no-underline dark:text-yellow-400"
